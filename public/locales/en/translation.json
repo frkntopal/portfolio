@@ -1,0 +1,21 @@
+{
+    "Projects" : "Projects",
+    "Contact" : "Contact",
+    "Information": "Information",
+    "Physiotherapy Website" : "Physiotherapy Website",
+    "It is a website that provides information about physiotherapy, satisfaction videos, information about diseases, appointment options, showing addresses on the map, and information about treatments.":"It is a website that provides information about physiotherapy, satisfaction videos, information about diseases, appointment options, showing addresses on the map, and information about treatments.",
+    "E-Commerce Website":"E-Commerce Website",
+    "It includes an e-commerce website where users can register, log in with their membership credentials, add products to their cart, and upon logging out, the website can detect this action.":"It includes an e-commerce website where users can register, log in with their membership credentials, add products to their cart, and upon logging out, the website can detect this action.",
+    "Weather Forecast Website":"Weather Forecast Website",
+    "It includes a weather application that provides daily weather conditions and a 5-day weather forecast for the desired location, as well as displaying the desired location on the map.":"It includes a weather application that provides daily weather conditions and a 5-day weather forecast for the desired location, as well as displaying the desired location on the map.",
+    "Name":"Name",
+    "Surname": "Surname",
+    "Phone":"Phone",
+    "Email":"Email",
+    "Message":"Message",
+    "Send":"Send",
+    "The Front End Developer's Page" : "The Front End Developer's Page",
+    "All Rights Reserved":"All Rights Reserved",
+    "Visit Project":"Visit Project"
+
+}

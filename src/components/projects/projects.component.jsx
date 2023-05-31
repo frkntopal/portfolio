@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import './projects.styles.scss';
 import { fetchGifCategories } from '../../utils/firebase/firebase';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
   const [categories, setCategories] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchGifCategories();
-      setCategories(data);
+      const translatedData = data.map((category) => ({
+        ...category,
+        gifs: category.gifs.map((gif) => ({
+          ...gif,
+          title: t(gif.title),
+          description: t(gif.description),
+        })),
+      }));
+      setCategories(translatedData);
     };
 
     fetchData();
-  }, []);
+  }, [t]);
 
   const openWebsite = (websiteUrl) => {
     window.open(websiteUrl, '_blank');
@@ -35,7 +45,7 @@ function Projects() {
                     className="card-button"
                     onClick={() => openWebsite(gif.websiteUrl)}
                   >
-                    Visit Project
+                    {t('Visit Project')}
                   </button>
                 </div>
               </div>

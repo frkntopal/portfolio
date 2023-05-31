@@ -5,7 +5,6 @@
 
   .slick-slide {
     padding: 0 5px;
-    
   }
 
   .language-card {
@@ -26,13 +25,22 @@
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    .language-slider {
+      .slick-prev,
+      .slick-next {
+        display: block;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .language-slider {
       padding: 0 20px;
 
       .slick-prev,
       .slick-next {
-        display: block !important;
+        display: block;
       }
     }
 

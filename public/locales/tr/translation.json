@@ -1,0 +1,20 @@
+{
+    "Projects" : "Projeler",
+    "Contact" : "İletişim",
+    "Information": "Bilgi",
+    "Physiotherapy Website" : "Fizyoterapist Sitesi",
+    "It is a website that provides information about physiotherapy, satisfaction videos, information about diseases, appointment options, showing addresses on the map, and information about treatments.":"Fizyoterapi hakkında bilgi sağlayan, memnuniyet videoları sunan, hastalıklar hakkında bilgi veren, randevu seçenekleri sunan, klinik adresini haritada gösteren ve tedaviler hakkında bilgi veren bir web sitesidir.",
+    "E-Commerce Website":"E-Ticaret Websitesi",
+    "It includes an e-commerce website where users can register, log in with their membership credentials, add products to their cart, and upon logging out, the website can detect this action.":"Kullanıcıların kayıt olabileceği, üyelik bilgileriyle giriş yapabileceği, ürünleri sepetlerine ekleyebileceği ve çıkış yaptıklarında web sitesinin bu eylemi tespit edebildiği bir e-ticaret web sitesini içerir.",
+    "Weather Forecast Website":"Hava Durumu Tahmini Websitesi",
+    "It includes a weather application that provides daily weather conditions and a 5-day weather forecast for the desired location, as well as displaying the desired location on the map.":"İstenilen konum için günlük hava koşullarını ve 5 günlük hava tahminini sağlayan, ayrıca istenilen konumu haritada gösteren bir hava durumu uygulamasını içerir.",
+    "Name":"İsim",
+    "Surname": "Soyisim",
+    "Phone":"Telefon",
+    "Email":"Email",
+    "Message":"Mesaj",
+    "Send":"Gönder",
+    "The Front End Developer's Page":"Front-End Geliştiricinin Sayfası",
+    "All Rights Reserved" : "Bütün Hakları Saklıdır",
+    "Visit Project":"Projeye Gözat"
+}

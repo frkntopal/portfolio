@@ -2,8 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {  FaPhone, FaEnvelope, FaLinkedinIn,FaGithub } from 'react-icons/fa';
 import './footer.styles.scss';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+
+  const {t} = useTranslation()
+  
 
   const handlePhoneClick = (event) => {
     event.preventDefault();
@@ -34,12 +38,12 @@ const Footer = () => {
           <li><a href="#" onClick={handleEmailClick}><FaEnvelope /></a></li>
         </ul>
         <ul className="menu">
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/information">Information</Link></li>
+          <li><Link to="/projects">{t('Projects')}</Link></li>
+          <li><Link to="/contact">{t('Contact')}</Link></li>
+          <li><Link to="/information">{t('Information')}</Link></li>
         </ul>
         <p>
-           <strong>©2023 The Front End Developer's Page | All Rights Reserved</strong>
+           <strong>©2023 {t("The Front End Developer's Page")} | {t('All Rights Reserved')}</strong>
         </p>
       </footer>
     </div>
