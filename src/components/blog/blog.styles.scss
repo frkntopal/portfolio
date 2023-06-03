@@ -2,9 +2,10 @@
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
-    padding: 1em;
     background: transparent;
     color: #dfd3d3;
+    margin-top: 30px;
+    padding: 0;
 
     .blogPosts {
         display: flex;
@@ -57,5 +58,11 @@
 
     @media (max-width: 768px) {
         width: calc(100% - 2em);
+    }
+}
+
+@media (max-width: 768px) {
+    .blogSection {
+        padding: 1em;
     }
 }

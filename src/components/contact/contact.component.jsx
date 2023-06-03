@@ -44,13 +44,18 @@ const Contact = () => {
         }
       );
   };
+  const handlePhoneClick = (event) => {
+    event.preventDefault();
+    window.open('https://wa.me/905538792957', '_blank');
+  };
+  
 
   return (
     <div className="contact-container">
       <div className="contact-info">
-        <FaWhatsapp size={100} />
+        <FaWhatsapp size={100} onClick={handlePhoneClick}/>
         <div className="contact-details">
-          <span className="phone-number">0553 879 29 57</span>
+          <span className="phone-number">+90 (553) 879 29 57</span>
         </div>
       </div>
       <div className="contact-form">
