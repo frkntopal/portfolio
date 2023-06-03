@@ -4,13 +4,13 @@ import PROJECTS_DATA from "../../projects-data";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC8BDTjtpIKHTpsfuLnjm4NCdppmLhRUl8",
-  authDomain: "furkantopal-portfolio-1845f.firebaseapp.com",
-  projectId: "furkantopal-portfolio-1845f",
-  storageBucket: "furkantopal-portfolio-1845f.appspot.com",
-  messagingSenderId: "262456114455",
-  appId: "1:262456114455:web:f095a0de9947257c4c8b52",
-  measurementId: "G-M47LP2B8Y3"
+  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

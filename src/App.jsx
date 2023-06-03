@@ -12,6 +12,9 @@ import Projects from './components/projects/projects.component';
 import Contact from './components/contact/contact.component';
 import Information from './components/information/information.component';
 import Home from './components/home/home.component';
+import BlogPageOne from './components/blog-page/blog-page-1.component';
+import BlogPageTwo from './components/blog-page/blog-page-2.component';
+import BlogPageThree from './components/blog-page/blog-page-3.component';
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -37,6 +40,9 @@ function App() {
             <Route path='/projects' element={<Projects/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/information' element={<Information/>}/>
+            <Route path='/blog/1' element={<BlogPageOne/>}/>
+            <Route path='/blog/2' element={<BlogPageTwo/>}/>
+            <Route path='/blog/3' element={<BlogPageThree/>}/>
           </Routes>
           <Footer />
         </div>

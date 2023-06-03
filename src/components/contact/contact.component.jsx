@@ -23,23 +23,23 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_1bu9cjl",
-        "template_scpls7t",
+        import.meta.env.VITE_APP_EMAILJS_SERVICE,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE,
         formData,
-        "uuECK1ks-NdZ1g-Fp"
+        import.meta.env.VITE_APP_EMAILJS_PUBLICKEY
       )
       .then(
         (result) => {
           console.log(result.text);
           alert(
-            "We will get back to you as soon as possible."
+            t("We will get back to you as soon as possible.")
           );
           setFormData(initialState);
         },
         (error) => {
           console.log(error.text);
           alert(
-            "An error occurred, please try again later."
+            t("An error occurred, please try again later.")
           );
         }
       );
@@ -92,7 +92,7 @@ const Contact = () => {
         <input
           type="email"
           id="email"
-          value={formData.time}
+          value={formData.email}
           onChange={(event) =>
             setFormData({ ...formData, email: event.target.value })
           }
