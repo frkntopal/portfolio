@@ -27,7 +27,7 @@ function BlogPageThree() {
                             </ul>
                         <h3>{t('Coding')}</h3>
                             <ul>          
-                                <p>{('The coding stage involves building the user interface based on the design and technology choices. The front-end developer implements the design elements and styling properties using HTML, CSS, and JavaScript. Attention is also given to browser compatibility, performance, and accessibility during this stage.')}</p>                                 
+                                <p>{t('The coding stage involves building the user interface based on the design and technology choices. The front-end developer implements the design elements and styling properties using HTML, CSS, and JavaScript. Attention is also given to browser compatibility, performance, and accessibility during this stage.')}</p>                                 
                             </ul>
                         <h3>{t('Testing')}</h3>
                             <ul>          

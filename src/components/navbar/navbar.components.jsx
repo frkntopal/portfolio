@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 
+
 function Navbar() {
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation();
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -22,49 +23,47 @@ function Navbar() {
     <header>
       <div className="navbar">
         <div className="logo">
-          <Link to="/">
+          <a href="#home">
             <img src={Logo} alt="Logo" />
-          </Link>
+          </a>
         </div>
         <ul className="links">
+          
           <li>
-            <Link to="/projects">{t('Projects')}</Link>
+            <a href="#projects">{t('Projects')}</a>
           </li>
           <li>
-            <Link to="/contact">{t('Contact')}</Link>
+            <a href="#contact">{t('Contact')}</a>
           </li>
           <li>
-            <Link to="/information">{t('Information')}</Link>
+            <a href="#information">{t('Information')}</a>
           </li>
         </ul>
         <div className="toggle_btn" onClick={toggleDropdown}>
           <i className="material-symbols-outlined">legend_toggle</i>
         </div>
         <div className={`dropdown_menu ${dropdownOpen ? 'open' : ''}`}>
-          <Link className="dropdownmenu_content" to="/projects">
+          <a className="dropdownmenu_content" href="#projects">
             {t('Projects')}
-          </Link>
-          <Link className="dropdownmenu_content" to="/contact">
+          </a>
+          <a className="dropdownmenu_content" href="#contact">
             {t('Contact')}
-          </Link>
-          <Link className="dropdownmenu_content" to="/information">
+          </a>
+          <a className="dropdownmenu_content" href="#information">
             {t('Information')}
-          </Link>
-          
+          </a>
         </div>
         <div className="checkbox-wrapper-55">
           <label className="rocker rocker-small">
             <input type="checkbox"/>
             <span onClick={()=> changeLanguage('tr')} className="switch-left">TR</span>
             <span onClick={()=> changeLanguage('en')} className="switch-right">EN</span>
-        </label>
+          </label>
+        </div>
       </div>
-        {/* <div className="language_btn">
-          <button onClick={() => changeLanguage('en')}>EN</button>
-          <button onClick={() => changeLanguage('tr')}>TR</button>
-        </div> */}
-      </div>
+
     </header>
+    
   );
 }
 

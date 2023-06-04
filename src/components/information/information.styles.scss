@@ -1,0 +1,55 @@
+.info-page {
+  padding: 0 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #dfd3d3;
+}
+
+.container {
+  flex-basis: calc(48% - 2em);
+  padding: 1em;
+  margin: 1em;
+  background-color: transparent;
+  text-align: center;
+  color: #d3bebe;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  margin-top: 15px;
+}
+
+.section-title {
+  margin-top: 0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-basis: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    
+  }
+}
