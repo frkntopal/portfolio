@@ -15,6 +15,7 @@ function Home() {
         Front end developer
       </title>
       <meta name='description' content='Web site yapımı'/>
+      <link rel="canonical" href="https://furkantopalportfolio.netlify.app/" />
     </Helmet>
     
     <div>
