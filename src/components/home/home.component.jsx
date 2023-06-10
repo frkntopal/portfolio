@@ -5,18 +5,18 @@ import Contact from '../contact/contact.component'
 import Blog from '../blog/blog.component'
 import Information from '../information/information.component'
 import Slider from '../slider/slider.component'
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet'
 
 function Home() {
   return (  
     <>
-    <Helmet>
-      <title>
-        Front end developer
-      </title>
-      <meta name='description' content='Web site yapımı'/>
-      <link rel="canonical" href="/" />
-    </Helmet>
+      <Helmet>
+        <title>
+          Front end developer
+        </title>
+        <meta name='description' content='Web site yapımı'/>
+        <link rel="canonical" href="/" />
+      </Helmet>
     
     <div>
         <Projects/>
