@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./i18n.js"
+import { HelmetProvider } from 'react-helmet-async'
 
 
 
@@ -14,6 +15,8 @@ import "./i18n.js"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </BrowserRouter>,
 )
