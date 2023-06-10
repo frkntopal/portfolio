@@ -8,14 +8,14 @@ import Slider from '../slider/slider.component'
 import { Helmet } from 'react-helmet-async'
 
 function Home() {
-  return (
+  return (  
     <>
     <Helmet>
       <title>
         Front end developer
       </title>
       <meta name='description' content='Web site yapımı'/>
-      <link rel="canonical" href="https://furkantopalportfolio.netlify.app/" />
+      <link rel="canonical" href="/" />
     </Helmet>
     
     <div>
