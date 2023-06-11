@@ -1,10 +1,19 @@
 import React from 'react'
 import './blog-page.styles.scss'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 function BlogPageThree() {
     const {t} = useTranslation();
     return (
+        <>
+        <Helmet>
+            <title>
+                Project Development Stages for Front-End Developers
+            </title>
+            <meta name='description' content='Front-End geliştiricileri için proje yapım aşamaları.'/>
+            <link rel="canonical" href="/blog/3" />
+        </Helmet>
         <div className="blog-container">
           <img className="blog-image" src="https://firebasestorage.googleapis.com/v0/b/furkantopal-portfolio-1845f.appspot.com/o/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg?alt=media&token=d98b2222-74eb-4403-b4c7-841d8570e624&_gl=1*1kq97bj*_ga*NzAxMDg4NDIzLjE2NzA3NDk3NDg.*_ga_CW55HF8NVT*MTY4NTc5NDYzNi41My4xLjE2ODU3OTQ3MTEuMC4wLjA." alt="blog-writee" />
             <div className="blog-info">
@@ -48,6 +57,7 @@ function BlogPageThree() {
                     </div>      
             </div>
         </div>
+        </>
       );
 }
 

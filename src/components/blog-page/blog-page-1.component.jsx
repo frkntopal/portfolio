@@ -1,10 +1,20 @@
 import React from 'react'
 import './blog-page.styles.scss'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 function BlogPageOne() {
     const {t} = useTranslation();
     return (
+        <>
+        <Helmet>
+            <title>
+                Keys To Success in Front-End Projects
+            </title>
+            <meta name='description' content='Frontend projelerinde başarıya ulaşmanın anahtarları'/>
+            <link rel="canonical" href="/blog/1" />
+        </Helmet>
+        
         <div className="blog-container">
           <img className="blog-image" src="https://firebasestorage.googleapis.com/v0/b/furkantopal-portfolio-1845f.appspot.com/o/jackson-sophat-_t-l5FFH8VA-unsplash.jpg?alt=media&token=f7942ff9-b09a-4be1-bb78-cf21d1bde0b3&_gl=1*125t4j*_ga*NzAxMDg4NDIzLjE2NzA3NDk3NDg.*_ga_CW55HF8NVT*MTY4NTc4MDEwMC41MC4xLjE2ODU3ODAxMzcuMC4wLjA." alt="fronetend" />
             <div className="blog-info">
@@ -49,6 +59,7 @@ function BlogPageOne() {
                     </div>      
             </div>
         </div>
+        </>
       );
 }
 

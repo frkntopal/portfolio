@@ -1,10 +1,19 @@
 import React from 'react'
 import './blog-page.styles.scss'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 function BlogPageTwo() {
     const { t} = useTranslation();
     return (
+        <>
+        <Helmet>
+            <title>
+                The Future of Front-End Software
+            </title>
+            <meta name='description' content='Gelecekte Frontend Yazılımı'/>
+            <link rel="canonical" href="/blog/2" />
+        </Helmet>
         <div className="blog-container">
           <img className="blog-image" src="https://firebasestorage.googleapis.com/v0/b/furkantopal-portfolio-1845f.appspot.com/o/drew-beamer-xU5Mqq0Chck-unsplash.jpg?alt=media&token=80cfb98f-2217-4440-8514-4eb2a85afc12&_gl=1*mf55ad*_ga*NzAxMDg4NDIzLjE2NzA3NDk3NDg.*_ga_CW55HF8NVT*MTY4NTc5MDg5NS41Mi4xLjE2ODU3OTE3MTAuMC4wLjA." alt="blog-write" />
             <div className="blog-info">
@@ -40,6 +49,7 @@ function BlogPageTwo() {
                     </div>      
             </div>
         </div>
+        </>
       );
 }
 

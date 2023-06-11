@@ -5,7 +5,7 @@ import Contact from '../contact/contact.component'
 import Blog from '../blog/blog.component'
 import Information from '../information/information.component'
 import Slider from '../slider/slider.component'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 function Home() {
   return (  
@@ -15,7 +15,7 @@ function Home() {
           Front end developer
         </title>
         <meta name='description' content='Web site yapımı'/>
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="" />
       </Helmet>
     
     <div>
